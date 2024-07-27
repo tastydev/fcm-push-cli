@@ -1,0 +1,20 @@
+{
+  "name": "fcm-push-cli",
+  "author": "Alessandro Lion",
+  "version": "1.0.0",
+  "description": "sends fcm push-notification payloads to firebase and specific devices",
+  "main": "src/index.js",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=21.0.0"
+  },
+  "scripts": {
+    "presend": "yarn install",
+    "send": "node --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "ansi-colors": "4.1.3",
+    "google-auth-library": "9.11.0"
+  }
+}
