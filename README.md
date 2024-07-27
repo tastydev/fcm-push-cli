@@ -9,11 +9,11 @@ You need a service-account-file.json file which includes sensitive google acc cr
 1. NodeJS >= v21 (stable native nodejs env file parsing & fetch support)
 2. `yarn install` to install all dependencies
 3. copy the content of `.env.template` and create a `.env` file near the package.json
-4. Add your device `FCM_TOKEN` into the `.env` file
+4. Add your device `FCM_TOKEN` into the `.env` file. This is the specific device token i.e returned by [firebase.messaging().getToken()](https://rnfirebase.io/reference/messaging#getToken)
 5. Place your generated `service-account-file.json` into the `config` directory, create the directory on package.json (root) level if not there
 6. Run `yarn send`, on success your device recieves a push notification sent by firebase
 
-If you want to know what properties inside a notification payload is supported by firebase. See [Firebase FCM message reference](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages).
+If you want to know which properties inside a notification payload are supported by Firebase. See [Firebase FCM message reference](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages).
 
 ## Arrival of the Example Payload
 
