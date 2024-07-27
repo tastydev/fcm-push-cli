@@ -10,7 +10,7 @@ You need a service-account-file.json file which includes sensitive google acc cr
 2. `yarn install` to install all dependencies
 3. copy the content of `.env.template` and create a `.env` file near the package.json
 4. Add your device `FCM_TOKEN` into the `.env` file
-5. Place your generated `service-account-file.json` into the `config` directory
+5. Place your generated `service-account-file.json` into the `config` directory, create the directory on package.json (root) level if not there
 6. Run `yarn send`, on success your device recieves a push notification sent by firebase
 
 If you want to know what properties inside a notification payload is supported by firebase. See [Firebase FCM message reference](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages).
@@ -18,3 +18,7 @@ If you want to know what properties inside a notification payload is supported b
 ## Arrival of the Example Payload
 
 <img src="assets/iPhone_15_Pro_FCM_Example_Payload.png" width="20%" height="auto">
+
+## Authors
+
+- **Alessandro Lion** - _Initial work_ - [Alessandro Lion](https://github.com/tastydev)
